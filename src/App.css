@@ -1,21 +1,24 @@
-.App {
+.app {
   text-align: center;
+  color: var(--constant-black);
+  background: var(--constant-grey);
+  padding: 10px;
 }
 
-.App-logo {
+.app__logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .app__logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 110vh;
+.app__header {
+  background-color: var(--constant-grey);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +34,7 @@
   }
 }
 
-.dropdown__wrapper{
+.app__dropdown-wrapper{
   display: flex;
   justify-content: flex-end;
 }

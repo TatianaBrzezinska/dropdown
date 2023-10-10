@@ -1,11 +1,9 @@
 :root {
-    --constant-overlay-black: rgba(0,0,0,0.64);
     --constant-black: #000;
     --constant-white: #fff;
-    --constant-light-blue: #0083fc;
-    --constant-blue: #004e96;
-    --constant-dark-blue: #003463;
+    --constant-blue: #0083fc;
     --constant-grey: #a3a3a3;
+    color-scheme: light;
 }
 
 .prevent-scroll{
@@ -14,4 +12,15 @@
 
 body{
     all: none;
+    margin: 0;
+    padding: 10px;
+    background-color: var(--constant-white);
 }
+
+[scheme='dark'] {
+    --constant-white: #a3a3a3;
+    --constant-grey: #282c34;
+    --constant-black: #a3a3a3;
+    color-scheme: dark;
+}
+
