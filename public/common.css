@@ -1,0 +1,17 @@
+:root {
+    --constant-overlay-black: rgba(0,0,0,0.64);
+    --constant-black: #000;
+    --constant-white: #fff;
+    --constant-light-blue: #0083fc;
+    --constant-blue: #004e96;
+    --constant-dark-blue: #003463;
+    --constant-grey: #a3a3a3;
+}
+
+.prevent-scroll{
+    overflow: hidden;
+}
+
+body{
+    all: none;
+}
