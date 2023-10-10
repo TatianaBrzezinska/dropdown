@@ -1,3 +1,3 @@
-# dropdownThemeChanger
+# dropdownThemeSwitcher
 
-Simple react dropdown which change page theme
+Simple react dropdown which switch page theme
