@@ -1,11 +1,11 @@
+import { applyScheme, getSavedScheme, getSystemScheme } from '../../utils';
+import { ThemeSwitcher } from '../index';
 import logo from '../../images/logo.svg';
 import './App.css';
-import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
-import { applyScheme, getSavedScheme, getSystemScheme } from '../../utils/colorSchemeUtils';
 
 applyScheme(getSavedScheme() || getSystemScheme());
 
-function App() {
+export const App = () => {
   return (
     <div className="app">
       <div className="app__dropdown-wrapper">
@@ -17,6 +17,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+};

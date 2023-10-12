@@ -1,12 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
-import {
-  applyScheme,
-  getSystemScheme,
-  getSavedScheme,
-  removeSavedScheme,
-} from '../../utils/colorSchemeUtils';
-import { Dropdown } from '../Dropdown/Dropdown';
-import { Auto, Check, Moon, Sun } from '../Icons';
+import { applyScheme, getSystemScheme, getSavedScheme, removeSavedScheme } from '../../utils';
+import { Dropdown, Auto, Check, Moon, Sun } from '../index';
 import './ThemeSwitcher.css';
 
 type ThemeOption = 'auto' | 'dark' | 'light';
