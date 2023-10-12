@@ -4,7 +4,7 @@ import {
   getSystemScheme,
   getSavedScheme,
   removeSavedScheme,
-} from '../../colorSchemeUtils';
+} from '../../utils/colorSchemeUtils';
 import { Dropdown } from '../Dropdown/Dropdown';
 import { Auto, Check, Moon, Sun } from '../Icons';
 import './ThemeSwitcher.css';

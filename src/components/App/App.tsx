@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+import logo from '../../images/logo.svg';
 import './App.css';
-import { ThemeSwitcher } from './components/ThemeSwitcher/ThemeSwitcher';
-import { applyScheme, getSavedScheme, getSystemScheme } from './colorSchemeUtils';
+import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
+import { applyScheme, getSavedScheme, getSystemScheme } from '../../utils/colorSchemeUtils';
 
 applyScheme(getSavedScheme() || getSystemScheme());
 
