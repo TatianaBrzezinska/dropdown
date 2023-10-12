@@ -2,9 +2,9 @@
   text-align: center;
   color: var(--constant-black);
   background: var(--constant-grey);
+  margin: 10px;
   padding: 10px;
 }
-
 .app__logo {
   height: 40vmin;
   pointer-events: none;
@@ -17,7 +17,6 @@
 }
 
 .app__header {
-  background-color: var(--constant-grey);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
