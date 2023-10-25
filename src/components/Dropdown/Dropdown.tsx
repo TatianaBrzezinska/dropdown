@@ -2,6 +2,7 @@ import { HTMLAttributes, RefObject, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import cx from 'classnames';
 import throttle from 'lodash.throttle';
+import { CSSTransition } from 'react-transition-group';
 import './Dropdown.css';
 
 interface DropdownProps extends HTMLAttributes<HTMLElement> {
@@ -62,12 +63,18 @@ export const Dropdown = ({
     };
   }, [shown, onShownChange, setCoords, targetRef]);
 
-  return shown
-    ? createPortal(
-        <div {...restProps} className={cx('dropdown', className)} style={{ ...style, ...coords }}>
-          {children}
-        </div>,
-        document.getElementById('overlay') as HTMLElement,
-      )
-    : null;
+  return createPortal(
+    <CSSTransition
+      in={shown}
+      timeout={200}
+      mountOnEnter={true}
+      unmountOnExit={true}
+      classNames="dropdown-animation"
+    >
+      <div {...restProps} className={cx('dropdown', className)} style={{ ...style, ...coords }}>
+        {children}
+      </div>
+    </CSSTransition>,
+    document.getElementById('overlay') as HTMLElement,
+  );
 };
